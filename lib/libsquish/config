@@ -13,7 +13,7 @@ USE_ALTIVEC ?= 0
 USE_SSE ?= 0
 
 # default flags
-CXXFLAGS ?= -O2 -Wall
+CXXFLAGS ?= -O0 -Wall
 ifeq ($(USE_OPENMP),1)
    CPPFLAGS += -DSQUISH_USE_OPENMP
    CXXFLAGS += -fopenmp

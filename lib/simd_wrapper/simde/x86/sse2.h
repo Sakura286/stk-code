@@ -3754,7 +3754,7 @@ SIMDE_FUNCTION_ATTRIBUTES
 int32_t
 simde_mm_movemask_epi8 (simde__m128i a) {
   #if defined(SIMDE_X86_SSE2_NATIVE) && !defined(__INTEL_COMPILER)
-    /* ICC has trouble with _mm_movemask_epi8 at -O2 and above: */
+    /* ICC has trouble with _mm_movemask_epi8 at -O0 and above: */
     return _mm_movemask_epi8(a);
   #else
     int32_t r = 0;

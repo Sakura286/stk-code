@@ -1,10 +1,10 @@
 # Build type STKRelease is similar to Release provided by CMake,
 # but it uses a lower optimization level
 
-set(CMAKE_CXX_FLAGS_STKRELEASE "-O2 -DNDEBUG" CACHE STRING
+set(CMAKE_CXX_FLAGS_STKRELEASE "-O0 -DNDEBUG" CACHE STRING
     "Flags used by the C++ compiler during STK release builds."
     FORCE)
-set(CMAKE_C_FLAGS_STKRELEASE "-O2 -DNDEBUG" CACHE STRING
+set(CMAKE_C_FLAGS_STKRELEASE "-O0 -DNDEBUG" CACHE STRING
     "Flags used by the C compiler during STK release builds."
     FORCE)
 set(CMAKE_EXE_LINKER_FLAGS_STKRELEASE

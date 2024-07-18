@@ -981,7 +981,7 @@ plus:
                     mcpp_optind--;
                 else if ((isdigit( *mcpp_optarg) && *mcpp_optarg != '0')
                         || *mcpp_optarg == 's' || *mcpp_optarg == 'z')
-                                            /* -O1, -O2 -Os, -Oz    */
+                                            /* -O1, -O0 -Os, -Oz    */
                     look_and_install( "__OPTIMIZE__", DEF_NOARGS_PREDEF, null
                             , "1");
                 else if (! isdigit( *mcpp_optarg))

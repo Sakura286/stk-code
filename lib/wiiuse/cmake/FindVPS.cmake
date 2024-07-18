@@ -61,7 +61,7 @@ if("${CMAKE_SYSTEM_NAME}" STREQUAL "MTX")
 # Linux
 elseif("${CMAKE_SYSTEM_NAME}" STREQUAL "Linux")
 	set(VPS_PLATFORM LINUX)
-	set(_VPS_FLAGS_32 "-O2 -Wno-write-strings")
+	set(_VPS_FLAGS_32 "-O0 -Wno-write-strings")
 	set(_VPS_FLAGS_64 "-m64 -O3 -ffast-math -funroll-all-loops -Wno-write-strings")
 
 ###
@@ -87,22 +87,22 @@ elseif("${CMAKE_SYSTEM_NAME}" STREQUAL "SunOS")
 # IRIX: CMake build not tested
 elseif("${CMAKE_SYSTEM_NAME}" MATCHES "IRIX")
 	set(VPS_PLATFORM IRIX)
-	set(_VPS_FLAGS_32 "-O2 -OPT")
-	set(_VPS_FLAGS_64 "-64 -O2 -OPT")
+	set(_VPS_FLAGS_32 "-O0 -OPT")
+	set(_VPS_FLAGS_64 "-64 -O0 -OPT")
 
 ###
 # Mac OS X
 elseif(APPLE AND "${CMAKE_SYSTEM_NAME}" STREQUAL "Darwin")
 	set(VPS_PLATFORM MACOSX)
-	set(_VPS_FLAGS_32 "-O2 -lm -lobjc -lstdc++ -Wno-write-strings")
+	set(_VPS_FLAGS_32 "-O0 -lm -lobjc -lstdc++ -Wno-write-strings")
 	set(_VPS_FLAGS_64 "-m64 -O3 -ffast-math -funroll-all-loops -lm -lobjc -lstdc++ -Wno-write-strings")
 
 ###
 # Windows
 elseif(WIN32)
 	set(VPS_PLATFORM WINDOWS)
-	set(_VPS_FLAGS_32 "-O2")
-	set(_VPS_FLAGS_64 "-O2")
+	set(_VPS_FLAGS_32 "-O0")
+	set(_VPS_FLAGS_64 "-O0")
 
 	if(MSVC)
 		set(DEFS_32 -D_CRT_SECURE_NO_DEPRECATE)

@@ -1,6 +1,6 @@
 // bc7e.ispc - Fast high quality SIMD BC7 encoder
 // Copyright (C) 2018-2020 Binomial LLC, All rights reserved. Apache 2.0 license - see LICENSE.
-// Typically compiled as: ispc -g -O2 "%(Filename).ispc" -o "$(TargetDir)%(Filename).obj" -h "$(ProjectDir)%(Filename)_ispc.h" --target=sse2,sse4,avx,avx2 --opt=fast-math --opt=disable-assertions
+// Typically compiled as: ispc -g -O0 "%(Filename).ispc" -o "$(TargetDir)%(Filename).obj" -h "$(ProjectDir)%(Filename)_ispc.h" --target=sse2,sse4,avx,avx2 --opt=fast-math --opt=disable-assertions
 // --opt=fast-math is optional (doesn't make much if any measurable difference). 
 // Thanks to ArasP for the determinism fix.
 
