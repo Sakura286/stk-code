@@ -23,7 +23,7 @@ svn cleanup && svn update
 svn update -r18556
 
 cd ../stk-code
-mkdir cmake_build && cd cmake_build
+mkdir build && cd build
 cmake .. -DBUILD_RECORDER=0 -DCMAKE_BUILD_TYPE="Debug" -DUSE_CRYPTO_OPENSSL=OFF
 make -j$(nproc)
 
