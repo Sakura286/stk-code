@@ -51,7 +51,7 @@ static GLuint generateRTT(const core::dimension2du &res, GLint internalFormat, G
     else
         glTexImage2D(GL_TEXTURE_2D, 0, internalFormat, res.Width, res.Height, 0, format, type, 0);
     return result;
-}
+} 
 
 RTT::RTT(unsigned int width, unsigned int height, float rtt_scale,
          bool use_default_fbo_only)

@@ -52,6 +52,9 @@
 #include <cstdio>
 #include <cstring>
 
+#include <cstdio>
+#include <cstring>
+
 using namespace video;
 using namespace scene;
 
