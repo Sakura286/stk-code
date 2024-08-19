@@ -45,6 +45,7 @@
 #include "tracks/track.hpp"
 #include "utils/profiler.hpp"
 #include "utils/string_utils.hpp"
+#include "utils/mygl.hpp"
 
 #include "../../lib/irrlicht/source/Irrlicht/CSceneManager.h"
 #include "../../lib/irrlicht/source/Irrlicht/os.h"

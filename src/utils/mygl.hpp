@@ -3,6 +3,11 @@
 namespace mygl
 {
 
+GLint get_current_fbo();
+void print_fbo_info(GLuint queried_object, GLuint new_fbo);
+uint32_t half_to_int32(uint16_t float16_value);
+void saveFrameBuff(const char* fileName, GLuint new_fbo, GLuint width, GLuint height);
+
 uint32_t half_to_int32(uint16_t float16_value)
 {
     // MSB -> LSB
