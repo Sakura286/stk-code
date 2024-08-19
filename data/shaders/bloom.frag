@@ -1,3 +1,6 @@
+#pragma optimize(off)
+#pragma debug(on)
+
 uniform sampler2D tex;
 uniform float scale;
 
