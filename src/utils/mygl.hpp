@@ -88,7 +88,10 @@ void saveFrameBuff(const char* fileName, GLuint new_fbo, GLuint width, GLuint he
 
     int iBufLen = width * height * dimension;
 
-    FILE* oFile = fopen(fileName, "wb");
+    char realFileName[80];
+    strcpy(realFileName, fileName);
+    strcat(realFileName, ".ppm");
+    FILE* oFile = fopen(realFileName, "wb");
     if (oFile == 0)
         printf("!!!!! Output file cannot open !!!!!\n");
 
